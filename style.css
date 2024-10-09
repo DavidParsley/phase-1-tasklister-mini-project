@@ -1,3 +1,5 @@
+/* I modified the original CSS slighty because I didnt like the pink color  */
+
 html {
   height: 100%;
   width: 100%;
@@ -7,12 +9,13 @@ html {
 body {
   min-height: 100%;
   min-width: 100%;
-  background: linear-gradient(pink, violet);
+  background: linear-gradient(rgb(0, 0, 0), rgb(255, 0, 0));
 }
 
 button {
   font-size: 7px;
 }
+
 
 #main-content {
   position: relative;
@@ -20,11 +23,18 @@ button {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  border: 1px solid #333;
+  border: 1px solid #ffffff;
   background: rgba(255, 255, 255, 0.3);
   padding: 15px 20px 18px 18px;
   border-radius: 5px;
   box-shadow: 2px 5px 5px #333;
+  color: #ffffff;
+  font-weight: bolder;
+
+}
+
+#create-task-form{
+  color: #000000;
 }
 
 #list {
@@ -33,5 +43,68 @@ button {
   background: rgba(255, 255, 255, 0.75);
   padding: 15px 20px 18px 18px;
   border-radius: 5px;
-  box-shadow: 2px 5px 5px #333;
+  box-shadow: 2px 5px 5px #000000;
+  color: #000000;
 }
+
+/* TASK LIST APPEARANCE */
+
+.thingsToDo {
+  display: flex; 
+  align-items: center; 
+  font-size: 23px;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #333;
+  line-height: 1.5;
+  margin: 20px 0;          
+  padding: 10px;           
+  background-color: #f0f0f0; 
+  border: 1px solid #ccc; 
+  border-radius: 5px; 
+  width: 300px; 
+  justify-content: space-between;
+}
+
+ /* 'ADD TASK' BUTTON APPEARANCE */
+
+.task_button {
+  background-color: #ff0000;
+  color: rgb(0, 0, 0); 
+  border: none; 
+  padding: 8px 17px; 
+  text-align: center; 
+  text-decoration: none; 
+  display: inline-block; 
+  font-size: 14px; 
+  margin: 4px 2px; 
+  cursor: pointer; 
+  border-radius: 5px; 
+  transition: background-color 0.3s; 
+}
+
+.task_button:hover {
+  background-color: #ffffff; 
+}
+
+/* REMOVE 'X' BUTTON APPEARANCE */
+
+.btn {
+  background-color: #ff0000;  
+  color: white;               
+  border: none;          
+  border-radius: 7px;    
+  padding: 3px 16px;       
+  font-size: 14px;          
+  cursor: pointer;            
+  font-weight: bold;
+  margin-left: auto; 
+}
+
+
+.btn:hover {
+  background-color: #ff1900; 
+} 
+
+
+
+
