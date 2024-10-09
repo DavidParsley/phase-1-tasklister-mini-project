@@ -6,7 +6,7 @@ document.addEventListener("DOMContentLoaded", () => {
     form.addEventListener('submit', (e) => {
       e.preventDefault()
       const priorityValue = e.target.priorityValue.value
-      const tasks = e.target['new-task-description'].value
+      const tasks = e.target['new_task-description'].value
       buildToDo(tasks, priorityValue)
       form.reset() 
     })
